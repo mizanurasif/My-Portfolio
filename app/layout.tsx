@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mizanur Asif — Software Engineer",
-  description: "Portfolio of Mizanur Asif, a software engineer building web applications end to end.",
+  title: "MD. Mizanur Rahman — Software Engineer",
+  description: "Portfolio of MD. Mizanur Rahman, Software Engineer at Samsung R&D Institute Bangladesh.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

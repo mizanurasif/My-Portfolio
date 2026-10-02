@@ -6,7 +6,7 @@ services:
             - 3000:3000
         environment:
             - MONGODB_URI=mongodb://admin:password@mongodb:27017/?authSource=admin
-            - ENV MONGODB_DB=user-account
+            - MONGODB_DB=user-account
         depends_on:
             - mongodb
     mongodb:

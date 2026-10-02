@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MD. Mizanur Rahman Master Resume</title>
+<!--
+  MASTER RESUME: the complete superset. Tailored one-page variants are cut
+  from this file; do not send it as-is. Everything here is backed by real
+  work or a public repo.
+-->
+<style>
+  @page { size: Letter; margin: 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #1a1a1a;
+    font-size: 9.7pt;
+    line-height: 1.25;
+  }
+  .name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+    letter-spacing: 0.5px;
+    margin: 0 0 2px 0;
+  }
+  .contact {
+    text-align: center;
+    font-size: 9pt;
+    margin: 0 0 7px 0;
+  }
+  a { color: #14418c; text-decoration: none; }
+  .section-title {
+    font-weight: bold;
+    font-size: 10pt;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    border-bottom: 1.2px solid #1a1a1a;
+    padding-bottom: 1.5px;
+    margin: 9px 0 4px 0;
+  }
+  .row, .subrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .row .left { font-weight: bold; }
+  .subrow .left { font-style: italic; }
+  .row .right, .subrow .right { text-align: right; white-space: nowrap; padding-left: 12px; font-style: normal; }
+  .stack { font-weight: normal; font-style: italic; }
+  ul { margin: 2px 0 4px 0; padding-left: 18px; }
+  li { margin: 1px 0; }
+  .skill-line { margin: 1px 0; }
+  .skill-line .label { font-weight: bold; }
+  p { margin: 2px 0; }
+  .block { margin-bottom: 6px; break-inside: avoid; }
+  .block.long { break-inside: auto; }
+  .row.project { margin-top: 4px; padding-left: 8px; break-after: avoid; }
+  .row.project + ul { margin-top: 0; }
+</style>
+</head>
+<body>
+
+  <div class="name">MD. MIZANUR RAHMAN</div>
+  <div class="contact">
+    <a href="mailto:mizanurasif02@gmail.com">mizanurasif02@gmail.com</a> &bull; +880 1618 070639 &bull;
+    LinkedIn: <a href="https://www.linkedin.com/in/mizanur-rahman-asif">mizanur-rahman-asif</a> &bull;
+    GitHub: <a href="https://github.com/mizanurasif">mizanurasif</a>
+  </div>
+
+  <div class="section-title">Summary</div>
+  <ul>
+    <li>Software Engineer with 2.5+ years at Samsung R&amp;D Institute Bangladesh, building developer tooling, cross-platform desktop apps, and mobile device plugins in C#, JavaScript (Node.js), TypeScript, and Rust, and owning features from design through release and support.</li>
+    <li>Builds async Python backends in personal work: a FastAPI + PostgreSQL platform with JWT auth, AWS S3 storage, Alembic migrations, and an isolated async test suite.</li>
+    <li>Strong debugging in large existing codebases (Visual Studio Common Project System, Tizen SDK toolchains, binary device protocols), backed by a KUET CSE degree and 650+ solved algorithm problems.</li>
+    <li>Hands-on information security experience from ISO 27001 / ISMS consulting: risk assessment, control selection, and audit evidence.</li>
+  </ul>
+
+  <div class="section-title">Technical Skills</div>
+  <div class="skill-line"><span class="label">Languages:</span> C#, Python, C, C++, JavaScript/TypeScript, Rust, Kotlin</div>
+  <div class="skill-line"><span class="label">Backend &amp; Web:</span> FastAPI, ASP.NET Core, SQLAlchemy 2.0, Pydantic v2, Alembic, React, Node.js, Jinja2, REST API design, pytorch</div>
+  <div class="skill-line"><span class="label">Databases:</span> SQL, PostgreSQL, SQL Server</div>
+  <div class="skill-line"><span class="label">Cloud &amp; DevOps:</span> Docker, Kubernetes, Git, Linux</div>
+  <div class="skill-line"><span class="label">Desktop &amp; Tooling:</span> .NET, Visual Studio Common Project System, Tauri, OpenGL</div>
+  <div class="skill-line"><span class="label">Platforms:</span> Tizen, Windows, Linux, Android/iOS</div>
+  <div class="skill-line"><span class="label">Concepts:</span> Data Structures &amp; Algorithms, Object-Oriented Design, JWT / OAuth2 Authentication, Machine Learning, ISO 27001 / ISMS</div>
+
+  <div class="section-title">Experience</div>
+
+  <div class="block long">
+    <div class="row">
+      <span class="left">Samsung R&amp;D Institute Bangladesh</span>
+      <span class="right">Dhaka, Bangladesh</span>
+    </div>
+    <div class="subrow">
+      <span class="left">Software Engineer</span>
+      <span class="right">Mar 2024 &ndash; Present</span>
+    </div>
+
+    <div class="row project">
+      <span class="left">Samsung Ring Plugin <span class="stack">(Android, iOS)</span></span>
+      <span class="right">Jan 2026 &ndash; Present</span>
+    </div>
+    <ul>
+      <li>Refactored every byte parser on Android into a single <b>generic parser</b> while keeping <b>backward compatibility</b> with existing data formats.</li>
+      <li>Designed new <b>byte protocols</b> for new health-sensing modules and implemented those modules end to end in the plugin.</li>
+      <li>Diagnosed user-reported bugs by correlating <b>ring binary data, plugin logs, and Samsung Health app logs</b> to find the root cause.</li>
+    </ul>
+
+    <div class="row project">
+      <span class="left"><a href="https://samsungtizenos.com/docs/sdk-tools/dotnet/visual-studio/vstools/tools/device-manager">Device Manager</a> <span class="stack">(Tauri, React, TypeScript, Rust)</span></span>
+      <span class="right">Dec 2025 &ndash; Jan 2026</span>
+    </div>
+    <ul>
+      <li>Wrote about <b>80% of the codebase</b> of a cross-platform desktop app that manages Tizen devices, shows live connection state, and connects to remote devices over IP.</li>
+      <li>Built the <b>entire frontend</b> in React, TypeScript, HTML, and CSS.</li>
+      <li>Wrote the <b>Rust backend</b> logic that fetches, filters, and updates device data, and the <b>API layer</b> between the UI and the backend.</li>
+      <li>Connected the app to devices over <b>SDB</b>, Tizen&rsquo;s equivalent of ADB, and took it through to <b>production release</b>.</li>
+    </ul>
+
+    <div class="row project">
+      <span class="left"><a href="https://samsungtizenos.com/docs/sdk-tools/dotnet/visual-studio/baseline-sdk/common-tools/tizen-doctor">Tizen Doctor (CLI)</a> <span class="stack">(JavaScript, Node.js)</span></span>
+      <span class="right">Jan 2025 &ndash; Dec 2025</span>
+    </div>
+    <ul>
+      <li>Researched and implemented the diagnostic commands for <b>Linux, macOS, and Windows</b>, working out the platform-specific checks for SDKs, build tools, and run readiness.</li>
+      <li><b>Automated</b> the developer-environment check across Visual Studio and VS Code for .NET, Web, and Native apps: it detects problems, fixes them, and tells developers how to resolve the rest.</li>
+      <li>Wrote the tool&rsquo;s <b>complete official documentation</b>.</li>
+    </ul>
+
+    <div class="row project">
+      <span class="left">Visual Studio Extension for Tizen <span class="stack">(C#, .NET)</span></span>
+      <span class="right">Jun 2024 &ndash; Jan 2026</span>
+    </div>
+    <ul>
+      <li>Developed new features and kept the extension up to date with each new <b>Tizen version release</b>.</li>
+      <li>Fixed bugs in the extension and in the <b>Baseline SDK tools</b> (Package Manager, Device Manager, Emulator Manager), and added small features to them.</li>
+      <li>Enabled <b>debugging and app installation on RISC-V</b> devices.</li>
+      <li>Wrote the <b>official documentation</b> for my own features and for existing older features.</li>
+    </ul>
+
+    <div class="row project">
+      <span class="left">Samsung Experience Services (SES) <span class="stack">(QA rotation)</span></span>
+      <span class="right">Mar 2024 &ndash; May 2024</span>
+    </div>
+    <ul>
+      <li>Tested SES APIs during onboarding, then analysed and reported the defects found.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">Makebell Limited</span>
+      <span class="right">Hong Kong SAR</span>
+    </div>
+    <div class="subrow">
+      <span class="left">Security Engineer &amp; ISO 27001 Consultant</span>
+      <span class="right">Jun 2026 &ndash; Aug 2026</span>
+    </div>
+    <ul>
+      <li>Guided client organisations through designing, implementing, and maintaining an Information Security Management System (ISMS) for official ISO 27001 certification.</li>
+      <li>Built the asset-based risk register, risk assessment and treatment methodology, and Statement of Applicability; mapped controls to evidence for the certification audit.</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Projects</div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">FastAPI Blog Platform <span class="stack">(Python, FastAPI, PostgreSQL, AWS S3 &bull; <a href="https://github.com/mizanurasif/Fast-API-Blog">source</a>)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>Full-stack blogging platform with an async FastAPI JSON API (OpenAPI docs at <code>/docs</code>) built on SQLAlchemy 2.0 and PostgreSQL, plus a server-rendered Jinja2 + vanilla-JS frontend that uses the same API.</li>
+      <li>Computed post scores in SQL with a correlated-subquery <code>column_property</code>, so posts sort by score in the database; used <code>selectinload</code> to avoid N+1 queries and database-level cascades to delete a user with one statement.</li>
+      <li>Implemented OAuth2 password flow with JWT access tokens, Argon2 hashing, and single-use, expiring password-reset tokens stored only as SHA-256 hashes; the reset endpoint doesn&rsquo;t reveal which emails are registered.</li>
+      <li>Profile images are EXIF-corrected, cropped, and uploaded to AWS S3, with blocking boto3 calls moved to a threadpool. Tracked the move from SQLite to PostgreSQL in Alembic migrations. The async pytest suite rolls back each test&rsquo;s transaction and mocks S3 with moto. Packaged with a multi-stage Docker build using uv.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">Shoe E-Commerce Platform <span class="stack">(C#, ASP.NET Core, EF Core &bull; <a href="https://github.com/mizanurasif/A-Shoe-E-Commerce-Website-using-asp.net-">source</a>)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>Full-stack web app with customer ordering and an admin back office for managing products, on a normalised Products / Orders / OrderDetails schema using Entity Framework Core code-first migrations, LINQ eager loading, and ASP.NET Core Identity authentication.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">Brain Tumor Segmentation <span class="stack">(Undergrad Thesis, Python)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>Hybrid 3D segmentation model for MRI scans based on a modified U-Net with Dynamic Convolution and attention mechanisms; built the data pipeline, training loop, and evaluation.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">Chronic Kidney Disease Detection <span class="stack">(Python, Machine Learning, Streamlit &bull; <a href="https://github.com/mizanurasif/Chronic-Kidney-Disease-Detection-using-ML">source</a>)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>Classifier that predicts chronic kidney disease from clinical indicators (blood pressure, RBC, WBC, sugar level, etc.); cleaned the raw dataset, prepared features, trained and compared several classifiers, and deployed the model as a Streamlit web app.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">3D Bus Terminal <span class="stack">(OpenGL 3.3, Computer Graphics &bull; <a href="https://github.com/mizanurasif/3D-bus-terminal-Design-using-Opengl-3.3">source</a>)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>3D model of a bus terminal built with OpenGL 3.3.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="row">
+      <span class="left">Smart Home and Security System <span class="stack">(Arduino, Embedded Systems &bull; <a href="https://github.com/mizanurasif/Smart-Home-And-Security-System-peripheral-project-">source</a>)</span></span>
+      <span class="right"></span>
+    </div>
+    <ul>
+      <li>Arduino-based home automation and security system using multiple sensors, a keypad, and a servo motor; automatically controls lights, doors, and the garage, with password-protected access.</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="block">
+    <div class="row">
+      <span class="left">Khulna University of Engineering &amp; Technology (KUET)</span>
+      <span class="right">Khulna, Bangladesh</span>
+    </div>
+    <div class="subrow">
+      <span class="left">B.Sc. in Computer Science and Engineering &bull; CGPA 3.43 / 4.00</span>
+      <span class="right">2019 &ndash; 2024</span>
+    </div>
+  </div>
+
+  <div class="section-title">Achievements &amp; Activities</div>
+  <div class="skill-line"><span class="label">Competitive Programming:</span> Codeforces: <a href="https://codeforces.com/profile/mizanurasif02">mizanurasif02</a> (500+ solved) &bull; LeetCode: <a href="https://leetcode.com/u/mizanurasif/">mizanurasif</a> (150+ solved)</div>
+  <div class="skill-line"><span class="label">Certification:</span> Samsung SWC Professional Exam, Passed (<a href="https://drive.google.com/file/d/1Lb5RHzMGiVSsIdMrdiptU55DFeWxSiIo/view?usp=sharing">certificate</a>)</div>
+  <div class="skill-line"><span class="label">Activities:</span> SGIPC, KUET: Member &bull; Bit2Byte: Assistant General Secretary</div>
+
+</body>
+</html>
