@@ -5,7 +5,6 @@ COPY app /my-app/app/
 COPY lib /my-app/lib/
 COPY next.config.ts /my-app/
 COPY tsconfig.json /my-app/
-COPY next-env.d.ts /my-app/
 COPY public /my-app/public/
 COPY postcss.config.mjs /my-app/
 

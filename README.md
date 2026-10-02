@@ -21,6 +21,7 @@ default content from `lib/portfolio.ts`.
 
 `.env.local` points the app at `mongodb://admin:password@localhost:27017`.
 
+
 ## Docker & Kubernetes Cheatsheet
 
 Run all commands from the project root (`my-app/`).
