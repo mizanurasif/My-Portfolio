@@ -23,10 +23,3 @@ export async function getDb(): Promise<Db> {
   const client = await clientPromise;
   return client.db(dbName);
 }
-
-export type UserDoc = {
-  _id: string;
-  name: string;
-  email: string;
-  username: string;
-};

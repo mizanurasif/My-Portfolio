@@ -1,27 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
 
-## Getting Started
+A Next.js portfolio site that stores its content in MongoDB.
 
-First, run the development server:
+| Route   | What it does                                          |
+|---------|-------------------------------------------------------|
+| `/`     | Public portfolio page                                 |
+| `/edit` | Form to edit every section; saves to MongoDB          |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Data is stored as one document (`_id: "main"`) in the `Portfolio` collection
+of the `user-account` database. Until the first save, the page shows the
+default content from `lib/portfolio.ts`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> `/edit` has no login. Anyone who can reach the site can change the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Local development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Start MongoDB: `docker compose -f my-app.yaml up -d mongodb`
+2. `npm install && npm run dev`
+3. Open http://localhost:3000 (edit at http://localhost:3000/edit)
 
+`.env.local` points the app at `mongodb://admin:password@localhost:27017`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 ## Docker & Kubernetes Cheatsheet
 
@@ -32,6 +31,8 @@ Run all commands from the project root (`my-app/`).
 ```bash
 docker build -t my-app:2.0 .
 ```
+
+Rebuild after every code change; the containers keep running the old image until you do.
 
 Check it exists:
 
